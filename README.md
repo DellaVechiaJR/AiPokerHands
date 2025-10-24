@@ -1,4 +1,4 @@
-# 🃏 AI Poker - Sistema de Classificação de Mãos de Poker com IA
+# AI Poker - Sistema de Classificação de Mãos de Poker com IA
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org)
@@ -6,7 +6,7 @@
 
 Um sistema completo de Inteligência Artificial para classificação automática de mãos de poker utilizando algoritmos de Machine Learning. O projeto implementa um pipeline end-to-end desde o processamento de dados até o treinamento e avaliação de modelos.
 
-## 🎯 Visão Geral
+## Visão Geral
 
 Este projeto desenvolve um sistema de IA capaz de:
 
@@ -16,16 +16,16 @@ Este projeto desenvolve um sistema de IA capaz de:
 - **Avaliar performance** com métricas abrangentes
 - **Fornecer API** para predições em tempo real
 
-## 🚀 Características Principais
+## Características Principais
 
-- ✅ **Pipeline Completo**: Conversão, treinamento, avaliação e persistência
-- ✅ **Interface CLI**: Comandos simples para todas as operações
-- ✅ **API de Predição**: Servidor web para uso em produção
-- ✅ **Múltiplos Formatos**: Suporte a dados textuais e numéricos
-- ✅ **Avaliação Robusta**: Métricas de clustering e acurácia
-- ✅ **Documentação Completa**: Guias e exemplos detalhados
+- **Pipeline Completo**: Conversão, treinamento, avaliação e persistência
+- **Interface CLI**: Comandos simples para todas as operações
+- **API de Predição**: Servidor web para uso em produção
+- **Múltiplos Formatos**: Suporte a dados textuais e numéricos
+- **Avaliação Robusta**: Métricas de clustering e acurácia
+- **Documentação Completa**: Guias e exemplos detalhados
 
-## 📊 Tipos de Mão Classificados
+## Tipos de Mão Classificados
 
 | Código | Tipo de Mão     | Descrição                                |
 | ------ | --------------- | ---------------------------------------- |
@@ -40,7 +40,7 @@ Este projeto desenvolve um sistema de IA capaz de:
 | 8      | Straight Flush  | Sequência + Mesmo naipe                  |
 | 9      | Royal Flush     | Ás, Rei, Dama, Valete, 10 do mesmo naipe |
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 ```
 AI_Poker/
@@ -63,7 +63,7 @@ AI_Poker/
     └── guia_de_uso.py          # Guia detalhado
 ```
 
-## 🛠️ Instalação
+## Instalação
 
 ### Pré-requisitos
 
@@ -84,7 +84,7 @@ pip install -r poker_ai/requirements.txt
 pip install pandas scikit-learn numpy
 ```
 
-## 🚀 Uso Rápido
+## Uso Rápido
 
 ### 1. Pipeline Completo (Recomendado)
 
@@ -122,7 +122,7 @@ python api_predicao.py
 # Acessar: http://localhost:5000
 ```
 
-## 📋 Formato dos Dados
+## Formato dos Dados
 
 ### Estrutura do CSV
 
@@ -138,7 +138,7 @@ carta1_naipe,carta1_valor,carta2_naipe,carta2_valor,carta3_naipe,carta3_valor,ca
 - **Valores**: 1=Ás, 2-10=Números, 11=Valete, 12=Dama, 13=Rei
 - **Tipo de Mão**: 0-9 (ver tabela acima)
 
-## 📊 Resultados de Performance
+## Resultados de Performance
 
 ### Métricas Obtidas
 
@@ -153,7 +153,7 @@ carta1_naipe,carta1_valor,carta2_naipe,carta2_valor,carta3_naipe,carta3_valor,ca
 - **Silhouette Score**: 0.141 indica clusters parcialmente separados
 - **Acurácia**: 44.8% é aceitável para clustering não-supervisionado
 
-## 🔧 Scripts Disponíveis
+## Scripts Disponíveis
 
 ### Scripts Principais
 
@@ -168,7 +168,7 @@ carta1_naipe,carta1_valor,carta2_naipe,carta2_valor,carta3_naipe,carta3_valor,ca
 - **`preparar_dataset.py`**: Validação e limpeza de datasets
 - **`test_modelo_completo.py`**: Testes automatizados
 
-## 📚 Documentação
+## Documentação
 
 ### Guias Disponíveis
 
@@ -190,7 +190,7 @@ cluster = modelo.predict(mao)
 tipo_mao = modelo.predict_labels(mao)
 ```
 
-## 🧪 Testes
+## Testes
 
 ```bash
 # Executar testes completos
@@ -203,7 +203,7 @@ python preparar_dataset.py --arquivo dados.csv --validar --estatisticas
 python preparar_dataset.py --arquivo dados.csv --limpar --saida dados_limpo.csv
 ```
 
-## 🔍 Comandos Úteis
+## Comandos Úteis
 
 ```bash
 # Ajuda geral
@@ -219,7 +219,7 @@ python preparar_dataset.py --criar-exemplo --n-amostras 1000
 python ver_resultados.py
 ```
 
-## 🎯 Casos de Uso
+## Casos de Uso
 
 ### 1. Desenvolvimento de Jogos
 
@@ -239,23 +239,23 @@ python ver_resultados.py
 - Sistema de tutoria inteligente
 - Plataforma de treinamento
 
-## 🚧 Limitações e Melhorias Futuras
+## Limitações e Melhorias Futuras
 
 ### Limitações Atuais
 
-- ⚠️ Acurácia de 44.8% pode ser melhorada
-- ⚠️ Silhouette Score baixo (0.141)
-- ⚠️ Algoritmo K-Means pode não ser ideal para dados complexos
+- Acurácia de 44.8% pode ser melhorada
+- Silhouette Score baixo (0.141)
+- Algoritmo K-Means pode não ser ideal para dados complexos
 
 ### Melhorias Planejadas
 
-- 🔧 Implementar algoritmos supervisionados (Random Forest, SVM)
-- 🔧 Adicionar feature engineering avançado
-- 🔧 Usar ensemble methods para melhorar performance
-- 🔧 Aplicar técnicas de balanceamento de classes
-- 🔧 Validar com datasets maiores
+- Implementar algoritmos supervisionados (Random Forest, SVM)
+- Adicionar feature engineering avançado
+- Usar ensemble methods para melhorar performance
+- Aplicar técnicas de balanceamento de classes
+- Validar com datasets maiores
 
-## 🤝 Contribuição
+## Contribuição
 
 Contribuições são bem-vindas! Por favor:
 
@@ -265,18 +265,16 @@ Contribuições são bem-vindas! Por favor:
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📄 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 👨‍💻 Autor
+## Autor
 
-**Seu Nome**
+**Luiz Carlos Della Vechia Junior**
 
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Perfil](https://linkedin.com/in/seu-perfil)
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
 - [scikit-learn](https://scikit-learn.org/) pela biblioteca de Machine Learning
 - [pandas](https://pandas.pydata.org/) pela manipulação de dados
@@ -287,12 +285,13 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para ma
 
 Se você encontrar algum problema ou tiver dúvidas:
 
-- 📧 Email: seu-email@exemplo.com
+- 📧 Email: dellavechia.jr@gmail.com
 - 🐛 Issues: [GitHub Issues](https://github.com/seu-usuario/AI_Poker/issues)
 - 💬 Discussões: [GitHub Discussions](https://github.com/seu-usuario/AI_Poker/discussions)
 
 ---
 
-**Desenvolvido com ❤️ para aprendizado de Machine Learning e Poker! 🃏✨**
+**Desenvolvido para aprendizado de Machine Learning e Poker!**
 
 _Se este projeto foi útil para você, considere dar uma ⭐ no GitHub!_
+
